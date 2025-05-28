@@ -1,0 +1,40 @@
+:root{
+	/* colors*/
+	--button-collor: #ff5353;
+	--main-bg-color: #d1f5f1;
+	--hover-bt-color: #2d5f5bb5;
+	--button-hover-collor: #912424;
+	
+	/* cursor */
+	--cursor-url-img: url("img/arrow-cursor-svgrepo-com.svg");
+	--cursor-hover-url-img: url("img/arrow-cursor-svgrepo-com-light.svg");
+}
+
+html, body{
+	cursor: var(--cursor-url-img) 0 0, auto;
+    height: 100vh;
+    display: block;
+    float: left;
+    width: 100%;
+    font-family: 'JostRegular', Arial, sans-serif;
+}
+body{
+	background: var(--main-bg-color);
+}
+ 
+a{
+    outline: none;
+    text-decoration: none;
+	color: var(--page-link-color);
+	cursor: var(--cursor-hover-url-img) 0 0, pointer;
+}
+a:hover,
+a:focus,
+a:active{
+	color: var(--page-link-hover-color);
+	cursor: var(--cursor-hover-url-img) 0 0, pointer;
+}
+
+a:-webkit-any-link {
+    cursor: var(--cursor-hover-url-img) 0 0, pointer;
+}
